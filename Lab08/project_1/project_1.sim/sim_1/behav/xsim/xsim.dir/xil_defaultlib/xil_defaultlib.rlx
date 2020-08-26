@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/home/ugrads/d/dweerasinghe/ECEN350/Lab08/nextpc.v,1585858722,verilog,,/home/ugrads/d/dweerasinghe/ECEN350/Lab08/nextpc_tb.v,,NextPCLogic,,,,,,,,
+/home/ugrads/d/dweerasinghe/ECEN350/Lab08/nextpc_tb.v,1585160967,verilog,,,,NextPClogicTest,,,,,,,,
+/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+/home/ugrads/d/dweerasinghe/ECEN350/Lab08/registerfile.v,1585858774,verilog,,/home/ugrads/d/dweerasinghe/ECEN350/Lab08/registerfile_tb.v,,RegisterFile,,,,,,,,
+/home/ugrads/d/dweerasinghe/ECEN350/Lab08/registerfile_tb.v,1585163955,verilog,,,,RegisterFileTest_v,,,,,,,,

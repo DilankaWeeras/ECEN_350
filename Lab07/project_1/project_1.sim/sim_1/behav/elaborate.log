@@ -1,0 +1,7 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/coe/Xilinx/Vivado/2015.2/bin/unwrapped/lnx64.o/xelab -wto 7d99ca57dff340d1b8eb0f72b1253cd9 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ImmGeneratorTest_behav xil_defaultlib.ImmGeneratorTest xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+ERROR: [XSIM 43-3980] File "/home/ugrads/d/dweerasinghe/ECEN350/Lab7/ImmGenerator.v" Line 21 : The "System Verilog Indexed Expression" is not supported yet for simulation.

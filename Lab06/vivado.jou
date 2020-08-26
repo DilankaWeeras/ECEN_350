@@ -1,0 +1,91 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Feb 26 12:48:25 2020
+# Process ID: 9104
+# Log file: /home/ugrads/d/dweerasinghe/ECEN350/Lab6/vivado.log
+# Journal file: /home/ugrads/d/dweerasinghe/ECEN350/Lab6/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_1 /home/ugrads/d/dweerasinghe/ECEN350/Lab6/project_1 -part xc7z010clg400-1
+set_property board_part digilentinc.com:zybo-z7-10:part0:1.0 [current_project]
+add_files -norecurse {/home/ugrads/d/dweerasinghe/ECEN350/Lab6/half_adder_top.v /home/ugrads/d/dweerasinghe/ECEN350/Lab6/mux2x1_top.v /home/ugrads/d/dweerasinghe/ECEN350/Lab6/mux2x1.v /home/ugrads/d/dweerasinghe/ECEN350/Lab6/half_adder_nand.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+add_files -norecurse {/home/ugrads/d/dweerasinghe/ECEN350/Lab6/half_adder_top.v /home/ugrads/d/dweerasinghe/ECEN350/Lab6/mux2x1_top.v /home/ugrads/d/dweerasinghe/ECEN350/Lab6/HalfAddTest.v /home/ugrads/d/dweerasinghe/ECEN350/Lab6/Decode24Test.v /home/ugrads/d/dweerasinghe/ECEN350/Lab6/Mux21Test.v /home/ugrads/d/dweerasinghe/ECEN350/Lab6/Gates.v /home/ugrads/d/dweerasinghe/ECEN350/Lab6/mux2x1.v /home/ugrads/d/dweerasinghe/ECEN350/Lab6/GatesTest.v /home/ugrads/d/dweerasinghe/ECEN350/Lab6/half_adder_nand.v}
+update_compile_order -fileset sources_1
+remove_files /home/ugrads/d/dweerasinghe/ECEN350/Lab6/half_adder_top.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+remove_files /home/ugrads/d/dweerasinghe/ECEN350/Lab6/mux2x1_top.v
+add_files -norecurse /home/ugrads/d/dweerasinghe/ECEN350/Lab6/Decoder2x4.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top GatesTest [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Decode24Test_v [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source Decode24Test_v.tcl
+close_sim
+launch_simulation
+source Decode24Test_v.tcl
+close_sim
+launch_simulation
+source Decode24Test_v.tcl
+close_sim
+launch_simulation
+source Decode24Test_v.tcl
+close_sim
+launch_simulation
+source Decode24Test_v.tcl
+close_sim
+launch_simulation
+source Decode24Test_v.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top HalfAddTest_v [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source Decode24Test_v.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Mux21Test_v [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source Decode24Test_v.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top HalfAddTest_v [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source Decode24Test_v.tcl

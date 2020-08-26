@@ -1,0 +1,36 @@
+{
+    "ObjArchives": [
+        {
+            "archive": "archive.1/_40515_archive_1.a",
+            "objects": [
+                [
+                    "keWLg_d.o",
+                    51517
+                ]
+            ],
+            "size": 51517
+        }
+    ],
+    "Modules": {
+        "...MASTER...": {},
+        "SingleCycleProcTest_v": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        }
+    },
+    "CompUnits": {
+        "keWLg_d": {
+            "mod": "SingleCycleProcTest_v",
+            "out": "keWLg_d.o",
+            "checksum": 0,
+            "mode": 4,
+            "bytes": 51517,
+            "archive": "archive.1/_40515_archive_1.a"
+        }
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    }
+}

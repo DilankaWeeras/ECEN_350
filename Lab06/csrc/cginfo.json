@@ -1,0 +1,91 @@
+{
+    "MlibObjs": {},
+    "PrevCompiledModules": {},
+    "LVLData": [
+        "SIM"
+    ],
+    "NameTable": {
+        "GatesTest": [
+            "GatesTest",
+            "W6mIe",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CompileProcesses": [
+        "cgproc.29004.json"
+    ],
+    "CompileStrategy": "fullobj",
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 89745,
+        "archive": "archive.0/_29004_archive_1.a"
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "GatesTest",
+        "GatesTest"
+    ],
+    "PEModules": [],
+    "stat": {
+        "ru_childs_end": {
+            "ru_nvcsw": 0,
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0
+        },
+        "ru_self_cgstart": {
+            "ru_nvcsw": 940,
+            "ru_utime_sec": 0.038080999999999997,
+            "ru_maxrss_kb": 57800,
+            "ru_stime_sec": 0.046785,
+            "ru_minflt": 12521,
+            "ru_nivcsw": 29,
+            "ru_majflt": 724
+        },
+        "nQuads": 147,
+        "CodeGen(%)": 19.454726199792731,
+        "ru_childs_cgstart": {
+            "ru_nvcsw": 0,
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0
+        },
+        "nMops": 507,
+        "totalObjSize": 108596,
+        "ru_self_end": {
+            "ru_nvcsw": 1066,
+            "ru_utime_sec": 0.047279000000000002,
+            "ru_maxrss_kb": 65340,
+            "ru_stime_sec": 0.057410000000000003,
+            "ru_minflt": 14697,
+            "ru_nivcsw": 43,
+            "ru_majflt": 758
+        },
+        "Frontend(%)": 80.545273800207269,
+        "outputSizePerQuad": 738.0,
+        "peak_mem_kb": 266808
+    },
+    "CompileStatus": "Successful",
+    "CurCompileUdps": {},
+    "Misc": {
+        "cwd": "/home/ugrads/d/dweerasinghe/ECEN350/Lab6",
+        "default_output_dir": "csrc",
+        "csrc": "csrc",
+        "csrc_abs": "/home/ugrads/d/dweerasinghe/ECEN350/Lab6/csrc",
+        "daidir": "simv.daidir",
+        "archive_dir": "archive.0",
+        "daidir_abs": "/home/ugrads/d/dweerasinghe/ECEN350/Lab6/simv.daidir"
+    }
+}

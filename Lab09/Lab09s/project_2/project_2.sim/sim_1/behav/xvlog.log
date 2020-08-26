@@ -1,0 +1,27 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module singlecycle
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'resetl' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:5]
+ERROR: [VRFC 10-1145] non-net port resetl cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:5]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'startpc' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:6]
+ERROR: [VRFC 10-1145] non-net port startpc cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:6]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'dmemout' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:8]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'CLK' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:9]
+ERROR: [VRFC 10-1145] non-net port CLK cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:9]
+ERROR: [VRFC 10-1040] module singlecycle ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:4]
+INFO: [VRFC 10-311] analyzing module SignExtender
+ERROR: [VRFC 10-1040] module SignExtender ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:124]
+INFO: [VRFC 10-311] analyzing module ALU
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'Zero' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:165]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net Zero is not permitted [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:179]
+ERROR: [VRFC 10-1040] module ALU ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:158]
+INFO: [VRFC 10-311] analyzing module DataMemory
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'Clock' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:190]
+ERROR: [VRFC 10-1145] non-net port Clock cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:190]
+ERROR: [VRFC 10-1040] module DataMemory ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:187]
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+ERROR: [VRFC 10-1040] module InstructionMemory ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:275]
+INFO: [VRFC 10-311] analyzing module NextPClogic
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'Branch' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:353]
+ERROR: [VRFC 10-1145] non-net port Branch cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:353]
+ERROR: [VRFC 10-845] illegal operand for operator & [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:359]
+INFO: [#UNDEF] Sorry, too many errors..

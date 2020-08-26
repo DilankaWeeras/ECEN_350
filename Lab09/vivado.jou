@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Apr 16 11:46:29 2020
+# Process ID: 25516
+# Log file: /home/ugrads/d/dweerasinghe/ECEN350/Lab09/vivado.log
+# Journal file: /home/ugrads/d/dweerasinghe/ECEN350/Lab09/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_1 /home/ugrads/d/dweerasinghe/ECEN350/Lab09/lab9_350/project_1 -part xc7vx485tffg1157-1
+add_files -norecurse {{/home/ugrads/d/dweerasinghe/ECEN350/Lab09/lab9_350/4/SingleCycleProcTest (1).v} /home/ugrads/d/dweerasinghe/ECEN350/Lab09/lab9_350/4/allModules.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+source SingleCycleProcTest_v.tcl

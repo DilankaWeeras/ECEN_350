@@ -1,0 +1,86 @@
+0 
+21
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/softwares/Common/synopsys/vcs-mx_vL-2016.06/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/libvirsim.so /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/liberrorinf.so /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/softwares/Common/synopsys/vcs-mx_vL-2016.06/include
+-full64
+-gen_obj
+-picarchive
+/softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/bin/vcs1
+SingleCycleProcTest.v
+45
+sysc_uni_pwd=/home/ugrads/d/dweerasinghe/ECEN350/Lab09
+XDG_SESSION_ID=21688
+XDG_RUNTIME_DIR=/run/user/126007816
+XDG_DATA_DIRS=/home/ugrads/d/dweerasinghe/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+VMR_MODE_FLAG=64
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/softwares/Common/synopsys/vcs-mx_vL-2016.06
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+USER_PRINCIPAL_NAME=dweerasinghe@AUTH.TAMU.EDU
+UNAME=/bin/uname
+TOOL_HOME=/softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64
+SSH_TTY=/dev/pts/6
+SSH_CONNECTION=172.31.19.32 53034 10.55.150.37 22
+SSH_CLIENT=172.31.19.32 53034 22
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib/qt-3.3/lib
+QTINC=/usr/lib/qt-3.3/include
+QTDIR=/usr/lib/qt-3.3
+OVA_UUM=0
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+LOADEDMODULES=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KRB5CCNAME=FILE:/tmp/krb5cc_cdc126007816_JtDmtV
+HISTFILESIZE=10000
+HISTCONTROL=ignoredups
+DA_SESSION_ID_AUTH=e2bad78a-f1da-224e-abf4-1663bcda4d37
+CDS_LIC_FILE=5280@license.ece.tamu.edu
+CDC_PREW2KHOST=hera3
+CDC_LOCALHOST=hera3.engr.tamu.edu
+CDC_JOINED_ZONE=CN=Servers,CN=Override,CN=ECEN,CN=Depts,CN=Global,CN=Zones,OU=Centrify,OU=Services,DC=engr,DC=tamu,DC=edu
+CDC_JOINED_SITE=TAMU
+CDC_JOINED_DOMAIN=engr.tamu.edu
+CDC_JOINED_DC=ops2.engr.tamu.edu
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
+0
+9
+1587052515 SingleCycleControl.v
+1587053345 SingleCycleProc.v
+1587053260 registerfile.v
+1587053259 nextpc.v
+1587053265 alu.v
+1587053261 ImmGenerator.v
+1587053258 InstructionMemory.v
+1587053262 DataMemory.v
+1587053257 SingleCycleProcTest.v
+4
+0 
+1464147802 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/libvirsim.so
+1464147272 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/liberrorinf.so
+1464147248 /softwares/Common/synopsys/vcs-mx_vL-2016.06/linux64/lib/libsnpsmalloc.so
+1587053350 simv.daidir

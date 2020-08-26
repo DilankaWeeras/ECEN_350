@@ -1,0 +1,19 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "SingleCycleProcTest_v": {
+            "Compiled": "Yes",
+            "Compiled Times": 3
+        }
+    },
+    "CompUnits": {},
+    "reusePaths": {
+        "keWLg_d": {
+            "icPath": "csrc"
+        },
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": []
+}

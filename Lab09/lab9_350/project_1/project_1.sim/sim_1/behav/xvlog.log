@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/lab9_350/4/allModules.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module singlecycle
+WARNING: [VRFC 10-756] identifier extimm is used before its declaration [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/lab9_350/4/allModules.v:42]
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-311] analyzing module NextPClogic
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/lab9_350/4/SingleCycleProcTest (1).v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SingleCycleProcTest_v
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/lab9_350/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

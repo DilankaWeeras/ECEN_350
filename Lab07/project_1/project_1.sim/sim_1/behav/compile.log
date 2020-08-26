@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab7/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab7/signextender_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGeneratorTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab7/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

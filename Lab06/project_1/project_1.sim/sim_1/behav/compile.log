@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab6/mux2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux21
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab6/Mux21Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux21Test_v
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab6/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

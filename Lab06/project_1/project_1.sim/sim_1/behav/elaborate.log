@@ -1,0 +1,16 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/coe/Xilinx/Vivado/2015.2/bin/unwrapped/lnx64.o/xelab -wto 231d849d141a4f70af83e7716d18f8e0 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Mux21Test_v_behav xil_defaultlib.Mux21Test_v xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port sel [/home/ugrads/d/dweerasinghe/ECEN350/Lab6/Mux21Test.v:70]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ugrads/d/dweerasinghe/ECEN350/Lab6/mux2x1.v" Line 1. Module Mux21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ugrads/d/dweerasinghe/ECEN350/Lab6/mux2x1.v" Line 1. Module Mux21 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Mux21
+Compiling module xil_defaultlib.Mux21Test_v
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Mux21Test_v_behav

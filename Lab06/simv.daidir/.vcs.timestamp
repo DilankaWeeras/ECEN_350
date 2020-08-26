@@ -1,0 +1,104 @@
+0 
+30
++cli+4
++itf+/opt/coe/synopsys/vcs-mx/L-2016.06-SP2-4/linux64/lib/vcsdp.tab
++memcbk
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/opt/coe/synopsys/vcs-mx/L-2016.06-SP2-4/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /opt/coe/synopsys/vcs-mx/L-2016.06-SP2-4/linux64/lib/libvirsim.so /opt/coe/synopsys/vcs-mx/L-2016.06-SP2-4/linux64/lib/liberrorinf.so /opt/coe/synopsys/vcs-mx/L-2016.06-SP2-4/linux64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/opt/coe/synopsys/vcs-mx/L-2016.06-SP2-4/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/opt/coe/synopsys/vcs-mx/L-2016.06-SP2-4/include
+-debug=3
+-full64
+-gen_obj
+-gui
+-picarchive
+-ucli
+/opt/coe/synopsys/vcs-mx/L-2016.06-SP2-4/linux64/bin/vcs1
+Gates.v
+GatesTest.v
+60
+sysc_uni_pwd=/home/ugrads/d/dweerasinghe/ECEN350/Lab6
+XMODIFIERS=@im=ibus
+XILINX_VIVADO=/opt/coe/Xilinx/Vivado/2015.2
+XDG_VTNR=1
+XDG_SESSION_TYPE=x11
+XDG_SESSION_ID=941
+XDG_SESSION_DESKTOP=gnome-classic
+XDG_SEAT=seat0
+XDG_RUNTIME_DIR=/run/user/126007816
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/home/ugrads/d/dweerasinghe/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
+XAUTHORITY=/run/gdm/auth-for-dweerasinghe-7ez7Ed/database
+WINDOWPATH=1:1:1:1:1:1
+VTE_VERSION=5202
+VMR_MODE_FLAG=64
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/opt/coe/synopsys/vcs-mx/L-2016.06-SP2-4
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+USER_PRINCIPAL_NAME=dweerasinghe@AUTH.TAMU.EDU
+USERNAME=dweerasinghe
+UNAME=/bin/uname
+TOOL_HOME=/opt/coe/synopsys/vcs-mx/L-2016.06-SP2-4/linux64
+TMOUT=7200
+SSH_AUTH_SOCK=/run/user/126007816/keyring/ssh
+SSH_AGENT_PID=12876
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/12743,unix/unix:/tmp/.ICE-unix/12743
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=ibus
+QT_GRAPHICSSYSTEM_CHECKED=1
+OVA_UUM=0
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KRB5CCNAME=FILE:/tmp/krb5cc_126007816
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+HISTCONTROL=ignoredups
+GNOME_TERMINAL_SERVICE=:1.130
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/b595b0ef_1123_427d_8087_5a280b02e9fe
+GNOME_SHELL_SESSION_MODE=classic
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+GJS_DEBUG_OUTPUT=stderr
+GDM_LANG=en_US.UTF-8
+GDMSESSION=gnome-classic
+DESKTOP_SESSION=gnome-classic
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-10nOuqRxnJ,guid=3ad4c6efcb07d14963d31bc85e56ac34
+DA_SESSION_ID_AUTH=b3926e96-f1c1-b941-a914-5434c84c8ff7
+COLORTERM=truecolor
+CDC_PREW2KHOST=zach-333-em3-31
+CDC_LOCALHOST=zach-333-em3-31.engr.tamu.edu
+CDC_JOINED_ZONE=CN=Labs,CN=Override,CN=ECEN,CN=Depts,CN=Global,CN=Zones,OU=Centrify,OU=Services,DC=engr,DC=tamu,DC=edu
+CDC_JOINED_SITE=TAMU
+CDC_JOINED_DOMAIN=engr.tamu.edu
+CDC_JOINED_DC=ops2.engr.tamu.edu
+0
+3
+1582740593 Gates.v
+1582740658 GatesTest.v
+1492225455 /opt/coe/synopsys/vcs-mx/L-2016.06-SP2-4/linux64/lib/vcsdp.tab
+4
+0 
+1492228032 /opt/coe/synopsys/vcs-mx/L-2016.06-SP2-4/linux64/lib/libvirsim.so
+1492227340 /opt/coe/synopsys/vcs-mx/L-2016.06-SP2-4/linux64/lib/liberrorinf.so
+1492227298 /opt/coe/synopsys/vcs-mx/L-2016.06-SP2-4/linux64/lib/libsnpsmalloc.so
+1582740846 simv.daidir

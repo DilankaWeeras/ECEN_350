@@ -1,0 +1,64 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "ALUTest_v": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        }
+    },
+    "stat": {
+        "ru_self_end": {
+            "ru_utime_sec": 0.11275300000000001,
+            "ru_maxrss_kb": 69096,
+            "ru_stime_sec": 0.092541999999999999,
+            "ru_minflt": 17264,
+            "ru_majflt": 2,
+            "ru_nvcsw": 330,
+            "ru_nivcsw": 35
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0021979999999999999,
+            "ru_maxrss_kb": 21168,
+            "ru_stime_sec": 0.015288,
+            "ru_minflt": 1160,
+            "ru_majflt": 0,
+            "ru_nvcsw": 8,
+            "ru_nivcsw": 6
+        },
+        "peak_mem_kb": 266916
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "checksum": 0,
+            "mod": "...MASTER...",
+            "mode": 4,
+            "out": "objs/amcQw_d.o",
+            "bytes": 7283
+        },
+        "Mdhkz_d": {
+            "checksum": 0,
+            "mod": "ALUTest_v",
+            "mode": 4,
+            "out": "Mdhkz_d.o",
+            "bytes": 24698,
+            "archive": "archive.9/_21541_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.9/_21541_archive_1.a",
+            "objects": [
+                [
+                    "Mdhkz_d.o",
+                    24698
+                ],
+                [
+                    "amcQwB.o",
+                    92921
+                ]
+            ],
+            "size": 117619
+        }
+    ],
+    "reusePaths": {}
+}

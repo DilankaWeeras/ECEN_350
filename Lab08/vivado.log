@@ -1,0 +1,350 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr  2 15:16:22 2020
+# Process ID: 21012
+# Current directory: /home/ugrads/d/dweerasinghe/ECEN350/Lab08
+# Command line: vivado
+# Log file: /home/ugrads/d/dweerasinghe/ECEN350/Lab08/vivado.log
+# Journal file: /home/ugrads/d/dweerasinghe/ECEN350/Lab08/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/coe/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 6849.891 ; gain = 196.684 ; free physical = 4093 ; free virtual = 128394
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'NextPClogicTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj NextPClogicTest_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab08/nextpc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NextPCLogic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab08/nextpc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NextPClogicTest
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 76fddd665dc3480a9374e129e53d6451 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NextPClogicTest_behav xil_defaultlib.NextPClogicTest xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/coe/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 76fddd665dc3480a9374e129e53d6451 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NextPClogicTest_behav xil_defaultlib.NextPClogicTest xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ugrads/d/dweerasinghe/ECEN350/Lab08/nextpc.v" Line 1. Module NextPCLogic doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NextPCLogic
+Compiling module xil_defaultlib.NextPClogicTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot NextPClogicTest_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/NextPClogicTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Apr  2 15:21:31 2020...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 6875.348 ; gain = 0.000 ; free physical = 4476 ; free virtual = 128800
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "NextPClogicTest_behav -key {Behavioral:sim_1:Functional:NextPClogicTest} -tclbatch {NextPClogicTest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source NextPClogicTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 7265.020 ; gain = 322.156 ; free physical = 4572 ; free virtual = 128727
+# run 1000ns
+                        PC+4 Test passed
+   Conditional - Take Branch Test passed
+ itional - Don't Take Branch Test passed
+        Unconditional Branch Test passed
+All tests passed
+$finish called at time : 19 ns : File "/home/ugrads/d/dweerasinghe/ECEN350/Lab08/nextpc_tb.v" Line 95
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 7265.020 ; gain = 0.000 ; free physical = 4419 ; free virtual = 128571
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 7265.020 ; gain = 380.711 ; free physical = 4408 ; free virtual = 128561
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'NextPClogicTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:46 . Memory (MB): peak = 7265.020 ; gain = 391.668 ; free physical = 4407 ; free virtual = 128560
+set_property top NextPClogicTest [current_fileset]
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7265.020 ; gain = 0.000 ; free physical = 5498 ; free virtual = 129921
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'NextPClogicTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj NextPClogicTest_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 76fddd665dc3480a9374e129e53d6451 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NextPClogicTest_behav xil_defaultlib.NextPClogicTest xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/coe/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 76fddd665dc3480a9374e129e53d6451 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NextPClogicTest_behav xil_defaultlib.NextPClogicTest xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "NextPClogicTest_behav -key {Behavioral:sim_1:Functional:NextPClogicTest} -tclbatch {NextPClogicTest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source NextPClogicTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 7311.039 ; gain = 46.020 ; free physical = 5363 ; free virtual = 129935
+# run 1000ns
+                        PC+4 Test passed
+   Conditional - Take Branch Test passed
+ itional - Don't Take Branch Test passed
+        Unconditional Branch Test passed
+All tests passed
+$finish called at time : 19 ns : File "/home/ugrads/d/dweerasinghe/ECEN350/Lab08/nextpc_tb.v" Line 95
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:26 . Memory (MB): peak = 7311.039 ; gain = 46.020 ; free physical = 5301 ; free virtual = 129873
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'NextPClogicTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 7311.039 ; gain = 46.020 ; free physical = 5301 ; free virtual = 129873
+set_property top RegisterFileTest_v [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RegisterFileTest_v' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj RegisterFileTest_v_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab08/registerfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab08/registerfile_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFileTest_v
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 76fddd665dc3480a9374e129e53d6451 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RegisterFileTest_v_behav xil_defaultlib.RegisterFileTest_v xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/coe/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 76fddd665dc3480a9374e129e53d6451 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RegisterFileTest_v_behav xil_defaultlib.RegisterFileTest_v xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ugrads/d/dweerasinghe/ECEN350/Lab08/registerfile.v" Line 1. Module RegisterFile doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.RegisterFileTest_v
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RegisterFileTest_v_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/RegisterFileTest_v_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Apr  2 15:31:42 2020...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RegisterFileTest_v_behav -key {Behavioral:sim_1:Functional:RegisterFileTest_v} -tclbatch {RegisterFileTest_v.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source RegisterFileTest_v.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 7378.887 ; gain = 67.848 ; free physical = 4977 ; free virtual = 130052
+# run 1000ns
+               Initial $0 Check 1 passed
+               Initial $0 Check 2 passed
+               Initial $0 Check 3 passed
+               Initial $0 Check 4 passed
+               $0 Stays 0 Check 1 passed
+               $0 Stays 0 Check 2 passed
+            Initial Value Check 1 passed
+            Initial Value Check 2 passed
+                  Value Updated 1 passed
+              Value Stayed Same 2 passed
+            Initial Value Check 3 passed
+            Initial Value Check 4 passed
+              Value Not Updated 3 passed
+              Value Stayed Same 4 passed
+            Initial Value Check 5 passed
+            Initial Value Check 6 passed
+                  Value Updated 5 passed
+              Value Stayed Same 6 passed
+            Initial Value Check 7 passed
+            Initial Value Check 8 passed
+              Value Not Updated 7 passed
+              Value Stayed Same 8 passed
+            Initial Value Check 9 passed
+           Initial Value Check 10 passed
+                  Value Updated 9 passed
+             Value Stayed Same 10 passed
+           Initial Value Check 11 passed
+           Initial Value Check 12 passed
+             Value Not Updated 11 passed
+             Value Stayed Same 12 passed
+           Initial Value Check 13 passed
+           Initial Value Check 14 passed
+                 Value Updated 13 passed
+             Value Stayed Same 14 passed
+           Initial Value Check 15 passed
+           Initial Value Check 16 passed
+             Value Not Updated 15 passed
+             Value Stayed Same 16 passed
+           Initial Value Check 17 passed
+           Initial Value Check 18 passed
+                 Value Updated 17 passed
+             Value Stayed Same 18 passed
+           Initial Value Check 19 passed
+           Initial Value Check 20 passed
+             Value Not Updated 19 passed
+             Value Stayed Same 20 passed
+           Initial Value Check 21 passed
+           Initial Value Check 22 passed
+                 Value Updated 21 passed
+             Value Stayed Same 22 passed
+           Initial Value Check 23 passed
+           Initial Value Check 24 passed
+             Value Not Updated 23 passed
+             Value Stayed Same 24 passed
+           Initial Value Check 25 passed
+           Initial Value Check 26 passed
+                 Value Updated 25 passed
+             Value Stayed Same 26 passed
+           Initial Value Check 27 passed
+           Initial Value Check 28 passed
+             Value Not Updated 27 passed
+             Value Stayed Same 28 passed
+           Initial Value Check 29 passed
+           Initial Value Check 30 passed
+                 Value Updated 29 passed
+             Value Stayed Same 30 passed
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 7378.887 ; gain = 0.000 ; free physical = 4935 ; free virtual = 130036
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:33 . Memory (MB): peak = 7378.887 ; gain = 67.848 ; free physical = 4934 ; free virtual = 130036
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RegisterFileTest_v_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 7378.887 ; gain = 67.848 ; free physical = 4934 ; free virtual = 130036
+set_property top NextPClogicTest [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+current_sim simulation_2
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'NextPClogicTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj NextPClogicTest_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 76fddd665dc3480a9374e129e53d6451 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NextPClogicTest_behav xil_defaultlib.NextPClogicTest xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/coe/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 76fddd665dc3480a9374e129e53d6451 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NextPClogicTest_behav xil_defaultlib.NextPClogicTest xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab08/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "NextPClogicTest_behav -key {Behavioral:sim_1:Functional:NextPClogicTest} -tclbatch {NextPClogicTest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source NextPClogicTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 7378.887 ; gain = 0.000 ; free physical = 4100 ; free virtual = 129903
+# run 1000ns
+                        PC+4 Test passed
+   Conditional - Take Branch Test passed
+ itional - Don't Take Branch Test passed
+        Unconditional Branch Test passed
+All tests passed
+$finish called at time : 19 ns : File "/home/ugrads/d/dweerasinghe/ECEN350/Lab08/nextpc_tb.v" Line 95
+run: Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:06 . Memory (MB): peak = 7378.887 ; gain = 0.000 ; free physical = 4064 ; free virtual = 129867
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:28 . Memory (MB): peak = 7378.887 ; gain = 0.000 ; free physical = 4061 ; free virtual = 129864
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'NextPClogicTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:32 . Memory (MB): peak = 7378.887 ; gain = 0.000 ; free physical = 4061 ; free virtual = 129864
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 7378.887 ; gain = 0.000 ; free physical = 2935 ; free virtual = 129390
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 7378.887 ; gain = 0.000 ; free physical = 2749 ; free virtual = 129270
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  2 15:42:46 2020...

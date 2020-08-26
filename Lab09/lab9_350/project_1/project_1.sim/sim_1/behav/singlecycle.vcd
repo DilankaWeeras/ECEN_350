@@ -1,0 +1,751 @@
+$date
+   Thu Apr 16 11:50:26 2020
+$end
+$version
+  13.1
+$end
+$timescale
+  1ps
+$end
+$scope module SingleCycleProcTest_v $end
+$var reg 1 ! CLK $end
+$var reg 1 " Reset_L $end
+$var reg 64 # startPC [63:0] $end
+$var reg 8 $ passed [7:0] $end
+$var reg 16 % watchdog [15:0] $end
+$var wire 64 & dMemOut [63:0] $end
+$var wire 64 ' currentPC [63:0] $end
+$scope module uut $end
+$var wire 1 ( resetl $end
+$var wire 64 ) startpc [63:0] $end
+$var reg 64 * currentpc [63:0] $end
+$var wire 64 + dmemout [63:0] $end
+$var wire 1 , CLK $end
+$var wire 64 - nextpc [63:0] $end
+$var wire 32 . instruction [31:0] $end
+$var wire 5 / rd [4:0] $end
+$var wire 5 0 rm [4:0] $end
+$var wire 5 1 rn [4:0] $end
+$var wire 11 2 opcode [10:0] $end
+$var wire 1 3 reg2loc $end
+$var wire 1 4 alusrc $end
+$var wire 1 5 mem2reg $end
+$var wire 1 6 regwrite $end
+$var wire 1 7 memread $end
+$var wire 1 8 memwrite $end
+$var wire 1 9 branch $end
+$var wire 1 : uncond_branch $end
+$var wire 4 ; aluctrl [3:0] $end
+$var wire 3 < signop [2:0] $end
+$var wire 64 = regoutA [63:0] $end
+$var wire 64 > regoutB [63:0] $end
+$var wire 64 ? aluout [63:0] $end
+$var wire 64 @ inputB [63:0] $end
+$var wire 1 A zero $end
+$var wire 64 B extimm [63:0] $end
+$var wire 64 C busW [63:0] $end
+$scope module imem $end
+$var wire 64 D Address [63:0] $end
+$var reg 32 E Data [31:0] $end
+$var parameter 32 F T_rd [31:0] $end
+$var parameter 32 G MemSize [31:0] $end
+$upscope $end
+$scope module npcl $end
+$var wire 64 H CurrentPC [63:0] $end
+$var wire 64 I SignExtImm64 [63:0] $end
+$var wire 1 J Branch $end
+$var wire 1 K ALUZero $end
+$var wire 1 L Uncondbranch $end
+$var reg 64 M NextPC [63:0] $end
+$upscope $end
+$scope module control $end
+$var reg 1 N reg2loc $end
+$var reg 1 O alusrc $end
+$var reg 1 P mem2reg $end
+$var reg 1 Q regwrite $end
+$var reg 1 R memread $end
+$var reg 1 S memwrite $end
+$var reg 1 T branch $end
+$var reg 1 U uncond_branch $end
+$var reg 4 V aluop [3:0] $end
+$var reg 3 W signop [2:0] $end
+$var wire 11 X opcode [10:0] $end
+$upscope $end
+$scope module rf2 $end
+$var wire 64 Y BusA [63:0] $end
+$var wire 64 Z BusB [63:0] $end
+$var wire 64 [ BusW [63:0] $end
+$var wire 5 \ RA [4:0] $end
+$var wire 5 ] RB [4:0] $end
+$var wire 5 ^ RW [4:0] $end
+$var wire 1 _ RegWr $end
+$var wire 1 ` Clk $end
+$var reg 2048 a registers [31:0] $end
+$upscope $end
+$scope module se2 $end
+$var reg 64 b BusImm [63:0] $end
+$var wire 26 c Imm26 [25:0] $end
+$var wire 3 d Ctrl [2:0] $end
+$upscope $end
+$scope module alu2 $end
+$var wire 64 e BusA [63:0] $end
+$var wire 64 f BusB [63:0] $end
+$var wire 4 g ALUCtrl [3:0] $end
+$var wire 1 h Zero $end
+$var reg 64 i BusW [63:0] $end
+$var parameter 32 j n [31:0] $end
+$upscope $end
+$scope module dmem $end
+$var wire 64 k WriteData [63:0] $end
+$var wire 64 l Address [63:0] $end
+$var wire 1 m Clock $end
+$var wire 1 n MemoryRead $end
+$var wire 1 o MemoryWrite $end
+$var reg 64 p ReadData [63:0] $end
+$var reg 8192 q memBank [1023:0] $end
+$scope task initset $end
+$var reg 64 r addr [63:0] $end
+$var reg 64 s data [63:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope task passTest $end
+$var reg 64 t actualOut [63:0] $end
+$var reg 64 u expectedOut [63:0] $end
+$var reg 257 v testType [256:0] $end
+$var reg 8 w passed [7:0] $end
+$upscope $end
+$scope task allPassed $end
+$var reg 8 x passed [7:0] $end
+$var reg 8 y numTests [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+b0 #
+b0 $
+b0 %
+bx &
+bx '
+1(
+b0 )
+bx *
+bx +
+0,
+bx -
+bx .
+bx /
+bx 0
+bx 1
+bx 2
+x3
+x4
+x5
+x6
+x7
+x8
+x9
+x:
+bx ;
+bx <
+bx =
+bx >
+bx ?
+bx @
+xA
+bx B
+bx C
+bx D
+bx E
+b10100 F
+b101000 G
+bx H
+bx I
+xJ
+xK
+xL
+bx M
+xN
+xO
+xP
+xQ
+xR
+xS
+xT
+xU
+bx V
+bx W
+bx X
+bx Y
+bx Z
+bx [
+bx \
+bx ]
+bx ^
+x_
+0`
+bx a
+bx b
+bx c
+bx d
+bx e
+bx f
+bx g
+xh
+bx i
+b1000000 j
+bx k
+bx l
+0m
+xn
+xo
+bx p
+bx00000000000000000000000000000000000000000000000000000000000000001111111111101110110110111110101001111101111010101111101100001111000001010000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000 q
+b100000 r
+b0 s
+bx t
+bx u
+bx v
+bx w
+bx x
+bx y
+$end
+#1000
+xA
+xK
+xh
+#2000
+bx =
+bx >
+bx Y
+bx Z
+bx e
+bx k
+#60000
+1!
+1,
+1`
+1m
+#120000
+0!
+b1 %
+bx *
+0,
+0`
+0m
+#121000
+0"
+b0 #
+0(
+#180000
+1!
+1,
+1`
+1m
+#240000
+0!
+b10 %
+b0 '
+b0 *
+0,
+b11111000010000000000001111101001 .
+b1001 /
+b11111 0
+b0x00x 1
+b11111000010 2
+14
+15
+16
+17
+08
+09
+0:
+b10 ;
+b1 <
+b0 @
+b0 B
+bx C
+b0 D
+b11111000010000000000001111101001 E
+b0 H
+b0 I
+0J
+0L
+xN
+1O
+1P
+1Q
+1R
+0S
+0T
+0U
+b10 V
+b1 W
+b11111000010 X
+bx [
+b11111 \
+b0x00x ]
+b1001 ^
+1_
+0`
+b0 b
+b10000000000001111101001 c
+b1 d
+b0 f
+b10 g
+0m
+1n
+0o
+#241000
+1"
+1(
+#242000
+b100 -
+b0 =
+bx >
+b100 M
+b0 Y
+bx Z
+b0 e
+bx k
+#260000
+bx i
+#262000
+b0 ?
+bx C
+bx [
+b0 i
+b0 l
+#263000
+1A
+1K
+1h
+#265000
+b100 M
+#300000
+1!
+1,
+1`
+1m
+#320000
+b1 &
+b1 +
+b1 C
+b1 [
+b1 p
+#360000
+0!
+b11 %
+b100 '
+b100 *
+0,
+b11111000010000001000001111101010 .
+b1010 /
+b0x0x0 1
+b1000 @
+b1000 B
+b100 D
+b11111000010000001000001111101010 E
+b100 H
+b1000 I
+b0x0x0 ]
+b1010 ^
+0`
+b1000 b
+b10000001000001111101010 c
+b1000 f
+0m
+#362000
+b1000 -
+bx >
+b1000 M
+bx Z
+bx k
+#363000
+bx0000000000000000000000000000000000000000000000000000000000000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx a
+#365000
+b0 =
+bx >
+b0 Y
+bx Z
+b0 e
+bx k
+#380000
+b1000 ?
+b1 C
+b1 [
+b1000 i
+b1000 l
+#381000
+0A
+0K
+0h
+#383000
+b1000 M
+#420000
+1!
+1,
+1`
+1m
+#440000
+b1010 &
+b1010 +
+b1010 C
+b1010 [
+b1010 p
+#480000
+0!
+b100 %
+b1000 '
+b1000 *
+0,
+b11111000010000010000001111101011 .
+b1011 /
+b0x0x1 1
+b10000 @
+b10000 B
+b1000 D
+b11111000010000010000001111101011 E
+b1000 H
+b10000 I
+b0x0x1 ]
+b1011 ^
+0`
+b10000 b
+b10000010000001111101011 c
+b10000 f
+0m
+#482000
+b1100 -
+bx >
+b1100 M
+bx Z
+bx k
+#483000
+bx00000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000000000000000000000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx a
+#485000
+b0 =
+bx >
+b0 Y
+bx Z
+b0 e
+bx k
+#500000
+b10000 ?
+b1010 C
+b1010 [
+b10000 i
+b10000 l
+#501000
+0A
+0K
+0h
+#540000
+1!
+1,
+1`
+1m
+#560000
+b101 &
+b101 +
+b101 C
+b101 [
+b101 p
+#600000
+0!
+b101 %
+b1100 '
+b1100 *
+0,
+b11111000010000011000001111101100 .
+b1100 /
+b0xx0x 1
+b11000 @
+b11000 B
+b1100 D
+b11111000010000011000001111101100 E
+b1100 H
+b11000 I
+b0xx0x ]
+b1100 ^
+0`
+b11000 b
+b10000011000001111101100 c
+b11000 f
+0m
+#602000
+b10000 -
+bx >
+b10000 M
+bx Z
+bx k
+#603000
+bx000000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000000000000000000000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx a
+#605000
+b0 =
+bx >
+b0 Y
+bx Z
+b0 e
+bx k
+#620000
+b11000 ?
+b101 C
+b101 [
+b11000 i
+b11000 l
+#621000
+0A
+0K
+0h
+#660000
+1!
+1,
+1`
+1m
+#680000
+b111111111011111010100111110111101010110110111110111011111111 &
+b111111111011111010100111110111101010110110111110111011111111 +
+b111111111011111010100111110111101010110110111110111011111111 C
+b111111111011111010100111110111101010110110111110111011111111 [
+b111111111011111010100111110111101010110110111110111011111111 p
+#720000
+0!
+b110 %
+b10000 '
+b10000 *
+0,
+b11111000010000100000001111101101 .
+b1101 /
+b0xxxx 1
+b100000 @
+b100000 B
+b10000 D
+b11111000010000100000001111101101 E
+b10000 H
+b100000 I
+b0xxxx ]
+b1101 ^
+0`
+b100000 b
+b10000100000001111101101 c
+b100000 f
+0m
+#722000
+b10100 -
+bx >
+b10100 M
+bx Z
+bx k
+#723000
+bx0000111111111011111010100111110111101010110110111110111011111111000000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000000000000000000000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx a
+#725000
+b0 =
+bx >
+b0 Y
+bx Z
+b0 e
+bx k
+#740000
+b100000 ?
+b111111111011111010100111110111101010110110111110111011111111 C
+b111111111011111010100111110111101010110110111110111011111111 [
+b100000 i
+b100000 l
+#741000
+0A
+0K
+0h
+#780000
+1!
+1,
+1`
+1m
+#800000
+b0 &
+b0 +
+b0 C
+b0 [
+b0 p
+#840000
+0!
+b111 %
+b10100 '
+b10100 *
+0,
+b10101010000010110000000101001010 .
+b1010 /
+b1010 0
+b1011 1
+b10101010000 2
+03
+04
+05
+07
+b1 ;
+bx <
+bx @
+b10110000 B
+b100000 C
+b10100 D
+b10101010000010110000000101001010 E
+b10100 H
+b10110000 I
+0N
+0O
+0P
+1Q
+0R
+0S
+0T
+0U
+b1 V
+bx W
+b10101010000 X
+b100000 [
+b1010 \
+b1011 ]
+b1010 ^
+0`
+b10110000 b
+b10000010110000000101001010 c
+bx d
+bx f
+b1 g
+0m
+0n
+#842000
+b11000 -
+b1010 =
+b101 >
+b101 @
+b11000 M
+b1010 Y
+b101 Z
+b1010 e
+b101 f
+b101 k
+#843000
+bx00000000000000000000000000000000000000000000000000000000000000000000111111111011111010100111110111101010110110111110111011111111000000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000000000000000000000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx a
+#845000
+b1010 =
+b101 >
+b1010 Y
+b101 Z
+b1010 e
+b101 k
+#860000
+bx ?
+bx C
+bx [
+bx i
+bx l
+#861000
+xA
+xK
+xh
+#862000
+b1111 ?
+b1111 C
+b1111 [
+b1111 i
+b1111 l
+#863000
+0A
+0K
+b11000 M
+0h
+#900000
+1!
+1,
+1`
+1m
+#960000
+0!
+b1000 %
+b11000 '
+b11000 *
+0,
+b10001010000010100000000110001100 .
+b1100 /
+b1100 0
+b1010 1
+b10001010000 2
+b0 ;
+b11000 D
+b10001010000010100000000110001100 E
+b11000 H
+0N
+0O
+0P
+1Q
+0R
+0S
+0T
+0U
+b0 V
+bx W
+b10001010000 X
+b1100 \
+b1010 ]
+b1100 ^
+0`
+b10000010100000000110001100 c
+b0 g
+0m
+#962000
+b11100 -
+b111111111011111010100111110111101010110110111110111011111111 =
+b1010 >
+b1010 @
+b11100 M
+b111111111011111010100111110111101010110110111110111011111111 Y
+b1010 Z
+b111111111011111010100111110111101010110110111110111011111111 e
+b1010 f
+b1010 k
+#963000
+bx00000000000000000000000000000000000000000000000000000000000000000000111111111011111010100111110111101010110110111110111011111111000000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000000000000000000011110000000000000000000000000000000000000000000000000000000000000001xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx a
+#965000
+b111111111011111010100111110111101010110110111110111011111111 =
+b1111 >
+b1111 @
+b111111111011111010100111110111101010110110111110111011111111 Y
+b1111 Z
+b111111111011111010100111110111101010110110111110111011111111 e
+b1111 f
+b1111 k
+#980000
+b0 ?
+b0 C
+b0 [
+b0 i
+b0 l
+#981000
+1A
+1K
+1h
+#982000
+b1010 ?
+b1010 C
+b1010 [
+b1010 i
+b1010 l
+#983000
+0A
+0K
+b11100 M
+0h
+#985000
+b1111 ?
+b1111 C
+b1111 [
+b1111 i
+b1111 l
+#986000
+0A
+0K
+0h

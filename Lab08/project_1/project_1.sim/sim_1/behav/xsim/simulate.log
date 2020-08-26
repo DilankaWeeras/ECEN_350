@@ -1,0 +1,8 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+                        PC+4 Test passed
+   Conditional - Take Branch Test passed
+ itional - Don't Take Branch Test passed
+        Unconditional Branch Test passed
+All tests passed
+$finish called at time : 19 ns : File "/home/ugrads/d/dweerasinghe/ECEN350/Lab08/nextpc_tb.v" Line 95

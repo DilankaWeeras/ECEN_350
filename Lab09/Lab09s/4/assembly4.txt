@@ -1,0 +1,9 @@
+movz x9, 0x1234
+movz x10, 0x5678
+add x9, x9, x10
+movz x10, 0x9abc
+add x9, x9, x10
+movz x10, 0xdef0
+add x9, x9, x10
+stur x9, [xzr,0x28]
+ldur x10, [xzr, 0x28]

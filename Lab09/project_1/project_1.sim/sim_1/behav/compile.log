@@ -1,0 +1,29 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module singlecycle
+WARNING: [VRFC 10-756] identifier extimm is used before its declaration [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v:41]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProcTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+WARNING: [VRFC 10-1195] overwriting previous definition of module DataMemory [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v:3]
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+WARNING: [VRFC 10-1195] overwriting previous definition of module InstructionMemory [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/InstructionMemory.v:1]
+INFO: [VRFC 10-311] analyzing module SignExtender
+WARNING: [VRFC 10-1195] overwriting previous definition of module SignExtender [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/ImmGenerator.v:1]
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module NextPClogic
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-311] analyzing module singlecycle
+WARNING: [VRFC 10-756] identifier extimm is used before its declaration [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v:41]
+WARNING: [VRFC 10-1195] overwriting previous definition of module singlecycle [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v:2]
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-1195] overwriting previous definition of module control [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleControl.v:18]
+INFO: [VRFC 10-311] analyzing module SingleCycleProcTest_v
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

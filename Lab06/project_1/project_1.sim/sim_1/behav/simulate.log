@@ -1,0 +1,11 @@
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+  Select First 0 passed
+  Select First 1 failed: x should be 1
+  Select First 2 failed: x should be 0
+  Select First 3 failed: x should be 1
+ Select Second 0 passed
+ Select Second 1 failed: x should be 0
+ Select Second 2 failed: x should be 1
+ Select Second 3 failed: x should be 1
+Some tests failed

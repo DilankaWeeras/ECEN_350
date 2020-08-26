@@ -1,0 +1,92 @@
+{
+    "CompileStatus": "Successful",
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 61830
+    },
+    "CompileProcesses": [
+        "cgproc.26885.json"
+    ],
+    "MlibObjs": {},
+    "NameTable": {
+        "SingleCycleProcTest_v": [
+            "SingleCycleProcTest_v",
+            "keWLg",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "LVLData": [
+        "SIM"
+    ],
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "SingleCycleProcTest_v",
+        "SingleCycleProcTest_v"
+    ],
+    "PrevCompiledModules": {},
+    "stat": {
+        "Frontend(%)": 66.987442991527701,
+        "totalObjSize": 120813,
+        "ru_childs_end": {
+            "ru_nvcsw": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_maxrss_kb": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "ru_self_cgstart": {
+            "ru_nvcsw": 219,
+            "ru_utime_sec": 0.077406000000000003,
+            "ru_stime_sec": 0.045411,
+            "ru_minflt": 14198,
+            "ru_maxrss_kb": 53264,
+            "ru_majflt": 0,
+            "ru_nivcsw": 81
+        },
+        "quadSpeed": 35992.34540068682,
+        "ru_childs_cgstart": {
+            "ru_nvcsw": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_maxrss_kb": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "nMops": 4416,
+        "nQuads": 1373,
+        "ru_self_end": {
+            "ru_nvcsw": 313,
+            "ru_utime_sec": 0.115553,
+            "ru_stime_sec": 0.058807999999999999,
+            "ru_minflt": 16717,
+            "ru_maxrss_kb": 61948,
+            "ru_majflt": 0,
+            "ru_nivcsw": 90
+        },
+        "mopSpeed": 115762.70742129131,
+        "CodeGen(%)": 33.012557008472307,
+        "mop/quad": 3.216314639475601,
+        "outputSizePerQuad": 87.0
+    },
+    "CurCompileUdps": {},
+    "PEModules": [],
+    "Misc": {
+        "cwd": "/home/ugrads/d/dweerasinghe/ECEN350/Lab09",
+        "default_output_dir": "csrc",
+        "daidir_abs": "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/simv.daidir",
+        "csrc": "csrc",
+        "csrc_abs": "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/csrc",
+        "daidir": "simv.daidir",
+        "archive_dir": "archive.0"
+    }
+}

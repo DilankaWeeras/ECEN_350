@@ -1,0 +1,342 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Apr 16 11:23:41 2020
+# Process ID: 43851
+# Log file: /home/ugrads/d/dweerasinghe/ECEN350/Lab09/vivado.log
+# Journal file: /home/ugrads/d/dweerasinghe/ECEN350/Lab09/vivado.jou
+#-----------------------------------------------------------
+ERROR: [Common 17-356] Failed to install all user apps.
+start_gui
+create_project project_1 /home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1 -part xc7z045ffg900-2
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/coe/Xilinx/Vivado/2015.2/data/ip'.
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 6023.258 ; gain = 50.582 ; free physical = 35604 ; free virtual = 164878
+set_property board_part xilinx.com:zc706:part0:1.2 [current_project]
+add_files -norecurse {/home/ugrads/d/dweerasinghe/ECEN350/Lab09/registerfile.v /home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v /home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v /home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v /home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProcTest.v /home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v /home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleControl.v /home/ugrads/d/dweerasinghe/ECEN350/Lab09/ImmGenerator.v /home/ugrads/d/dweerasinghe/ECEN350/Lab09/InstructionMemory.v}
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+set_property top SingleCycleProcTest_v [current_fileset]
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+update_compile_order -fileset sources_1
+set_property top SingleCycleProcTest_v [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'SingleCycleProcTest_v' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav'
+xvlog -m64 --relax -prj SingleCycleProcTest_v_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'Clock' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v:10]
+ERROR: [VRFC 10-1145] non-net port Clock cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v:10]
+ERROR: [VRFC 10-1040] module DataMemory ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v:7]
+INFO: [USF-XSim-99] Step results log file:'/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'SingleCycleProcTest_v' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav'
+xvlog -m64 --relax -prj SingleCycleProcTest_v_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'Clock' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v:10]
+ERROR: [VRFC 10-1145] non-net port Clock cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v:10]
+ERROR: [VRFC 10-1040] module DataMemory ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v:7]
+INFO: [USF-XSim-99] Step results log file:'/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav/xvlog.log' file for more information.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'SingleCycleProcTest_v' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav'
+xvlog -m64 --relax -prj SingleCycleProcTest_v_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'Clock' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v:9]
+ERROR: [VRFC 10-1145] non-net port Clock cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v:9]
+ERROR: [VRFC 10-1040] module DataMemory ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v:6]
+INFO: [USF-XSim-99] Step results log file:'/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav/xvlog.log' file for more information.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'SingleCycleProcTest_v' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav'
+xvlog -m64 --relax -prj SingleCycleProcTest_v_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'Clock' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v:9]
+ERROR: [VRFC 10-1145] non-net port Clock cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v:9]
+ERROR: [VRFC 10-1040] module DataMemory ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v:6]
+INFO: [USF-XSim-99] Step results log file:'/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav/xvlog.log' file for more information.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'SingleCycleProcTest_v' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav'
+xvlog -m64 --relax -prj SingleCycleProcTest_v_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module singlecycle
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'resetl' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v:5]
+ERROR: [VRFC 10-1145] non-net port resetl cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v:5]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'startpc' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v:6]
+ERROR: [VRFC 10-1145] non-net port startpc cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v:6]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'dmemout' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v:8]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'CLK' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v:9]
+ERROR: [VRFC 10-1145] non-net port CLK cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v:9]
+ERROR: [VRFC 10-1040] module singlecycle ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v:4]
+INFO: [USF-XSim-99] Step results log file:'/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav/xvlog.log' file for more information.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'SingleCycleProcTest_v' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav'
+xvlog -m64 --relax -prj SingleCycleProcTest_v_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module singlecycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProcTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+WARNING: [VRFC 10-1195] overwriting previous definition of module DataMemory [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v:5]
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+WARNING: [VRFC 10-1195] overwriting previous definition of module InstructionMemory [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/InstructionMemory.v:10]
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+WARNING: [VRFC 10-1195] overwriting previous definition of module ImmGenerator [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/ImmGenerator.v:3]
+INFO: [VRFC 10-311] analyzing module alu
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'busW' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:11]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'zero' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:12]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'busA' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:13]
+ERROR: [VRFC 10-1145] non-net port busA cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:13]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'busB' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:14]
+ERROR: [VRFC 10-1145] non-net port busB cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:14]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'ctrl' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:15]
+ERROR: [VRFC 10-1145] non-net port ctrl cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:15]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net busW is not permitted [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:20]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net zero is not permitted [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:21]
+ERROR: [VRFC 10-1040] module alu ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:9]
+INFO: [VRFC 10-311] analyzing module NextPCLogic
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'CurrentPC' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:3]
+ERROR: [VRFC 10-1145] non-net port CurrentPC cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:3]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'SignExtImm64' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:4]
+ERROR: [VRFC 10-1145] non-net port SignExtImm64 cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:4]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'Branch' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:5]
+ERROR: [VRFC 10-1145] non-net port Branch cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:5]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'ALUZero' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:6]
+ERROR: [VRFC 10-1145] non-net port ALUZero cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:6]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [USF-XSim-99] Step results log file:'/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'SingleCycleProcTest_v' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav'
+xvlog -m64 --relax -prj SingleCycleProcTest_v_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module singlecycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/SingleCycleProcTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+WARNING: [VRFC 10-1195] overwriting previous definition of module DataMemory [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/DataMemory.v:5]
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+WARNING: [VRFC 10-1195] overwriting previous definition of module InstructionMemory [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/InstructionMemory.v:10]
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+WARNING: [VRFC 10-1195] overwriting previous definition of module ImmGenerator [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/ImmGenerator.v:3]
+INFO: [VRFC 10-311] analyzing module alu
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'busW' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:11]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'zero' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:12]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'busA' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:13]
+ERROR: [VRFC 10-1145] non-net port busA cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:13]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'busB' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:14]
+ERROR: [VRFC 10-1145] non-net port busB cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:14]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'ctrl' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:15]
+ERROR: [VRFC 10-1145] non-net port ctrl cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:15]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net busW is not permitted [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:20]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net zero is not permitted [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:21]
+ERROR: [VRFC 10-1040] module alu ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/alu.v:9]
+INFO: [VRFC 10-311] analyzing module NextPCLogic
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'CurrentPC' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:3]
+ERROR: [VRFC 10-1145] non-net port CurrentPC cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:3]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'SignExtImm64' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:4]
+ERROR: [VRFC 10-1145] non-net port SignExtImm64 cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:4]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'Branch' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:5]
+ERROR: [VRFC 10-1145] non-net port Branch cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:5]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'ALUZero' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:6]
+ERROR: [VRFC 10-1145] non-net port ALUZero cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/nextpc.v:6]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [USF-XSim-99] Step results log file:'/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/project_1/project_1.sim/sim_1/behav/xvlog.log' file for more information.
+close_project
+create_project project_2 /home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/project_2 -part xc7vx485tffg1157-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/coe/Xilinx/Vivado/2015.2/data/ip'.
+add_files -norecurse {{/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/SingleCycleProcTest (1).v} /home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'SingleCycleProcTest_v' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/project_2/project_2.sim/sim_1/behav'
+xvlog -m64 --relax -prj SingleCycleProcTest_v_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module singlecycle
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'resetl' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:5]
+ERROR: [VRFC 10-1145] non-net port resetl cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:5]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'startpc' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:6]
+ERROR: [VRFC 10-1145] non-net port startpc cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:6]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'dmemout' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:8]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'CLK' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:9]
+ERROR: [VRFC 10-1145] non-net port CLK cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:9]
+ERROR: [VRFC 10-1040] module singlecycle ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:4]
+INFO: [VRFC 10-311] analyzing module SignExtender
+ERROR: [VRFC 10-1040] module SignExtender ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:124]
+INFO: [VRFC 10-311] analyzing module ALU
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'Zero' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:165]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net Zero is not permitted [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:179]
+ERROR: [VRFC 10-1040] module ALU ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:158]
+INFO: [VRFC 10-311] analyzing module DataMemory
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'Clock' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:190]
+ERROR: [VRFC 10-1145] non-net port Clock cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:190]
+ERROR: [VRFC 10-1040] module DataMemory ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:187]
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+ERROR: [VRFC 10-1040] module InstructionMemory ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:275]
+INFO: [VRFC 10-311] analyzing module NextPClogic
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'Branch' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:353]
+ERROR: [VRFC 10-1145] non-net port Branch cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:353]
+ERROR: [VRFC 10-845] illegal operand for operator & [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:359]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [USF-XSim-99] Step results log file:'/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/project_2/project_2.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/project_2/project_2.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'SingleCycleProcTest_v' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/project_2/project_2.sim/sim_1/behav'
+xvlog -m64 --relax -prj SingleCycleProcTest_v_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module singlecycle
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'resetl' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:5]
+ERROR: [VRFC 10-1145] non-net port resetl cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:5]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'startpc' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:6]
+ERROR: [VRFC 10-1145] non-net port startpc cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:6]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'dmemout' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:8]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'CLK' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:9]
+ERROR: [VRFC 10-1145] non-net port CLK cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:9]
+ERROR: [VRFC 10-1040] module singlecycle ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:4]
+INFO: [VRFC 10-311] analyzing module SignExtender
+ERROR: [VRFC 10-1040] module SignExtender ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:124]
+INFO: [VRFC 10-311] analyzing module ALU
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'Zero' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:165]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net Zero is not permitted [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:179]
+ERROR: [VRFC 10-1040] module ALU ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:158]
+INFO: [VRFC 10-311] analyzing module DataMemory
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'Clock' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:190]
+ERROR: [VRFC 10-1145] non-net port Clock cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:190]
+ERROR: [VRFC 10-1040] module DataMemory ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:187]
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+ERROR: [VRFC 10-1040] module InstructionMemory ignored due to previous errors [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:275]
+INFO: [VRFC 10-311] analyzing module NextPClogic
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'Branch' when default_nettype is none [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:353]
+ERROR: [VRFC 10-1145] non-net port Branch cannot be of mode input [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:353]
+ERROR: [VRFC 10-845] illegal operand for operator & [/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/4/allModules.v:359]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [USF-XSim-99] Step results log file:'/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/project_2/project_2.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ugrads/d/dweerasinghe/ECEN350/Lab09/Lab09s/project_2/project_2.sim/sim_1/behav/xvlog.log' file for more information.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 16 11:44:47 2020...

@@ -1,0 +1,64 @@
+{
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_29004_archive_1.a",
+            "objects": [
+                [
+                    "W6mIe_d.o",
+                    11568
+                ],
+                [
+                    "amcQwB.o",
+                    89745
+                ]
+            ],
+            "size": 101313
+        }
+    ],
+    "Modules": {
+        "...MASTER...": {},
+        "GatesTest": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "W6mIe_d": {
+            "mod": "GatesTest",
+            "mode": 4,
+            "out": "W6mIe_d.o",
+            "bytes": 11568,
+            "checksum": 0,
+            "archive": "archive.0/_29004_archive_1.a"
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "mode": 4,
+            "out": "objs/amcQw_d.o",
+            "bytes": 7283,
+            "checksum": 0
+        }
+    },
+    "reusePaths": {},
+    "stat": {
+        "ru_self_end": {
+            "ru_nvcsw": 1063,
+            "ru_utime_sec": 0.047154000000000001,
+            "ru_maxrss_kb": 65332,
+            "ru_stime_sec": 0.057258999999999997,
+            "ru_minflt": 14693,
+            "ru_nivcsw": 43,
+            "ru_majflt": 758
+        },
+        "ru_childs_end": {
+            "ru_nvcsw": 0,
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0
+        },
+        "peak_mem_kb": 266808
+    }
+}
